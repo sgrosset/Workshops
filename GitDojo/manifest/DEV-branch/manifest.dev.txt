@@ -5,3 +5,7 @@
 # AUTHOR: Sosthene Grosset-Janin
 # TIMEFRAME: Nov/Dec 2023
 # CONTEXT: Outline the historical content of the current branch
+
+
+# us: dev-0001
+# job: create a sample java class: MySampleClass.java
