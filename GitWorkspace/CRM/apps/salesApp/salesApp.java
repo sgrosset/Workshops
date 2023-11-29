@@ -237,7 +237,7 @@ public class salesApp extends salesAppLibrary
         // Primitives
         // Objects
       // Logic
-      System.out.println("I am inside the logic: [MyNewMethod]");
+      System.out.println("I am inside the logic: [MyNewMethods]");
     }
 
 }
