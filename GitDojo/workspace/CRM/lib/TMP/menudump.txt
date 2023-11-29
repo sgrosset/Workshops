@@ -1,0 +1,234 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+
+    // variables
+        // primitives 
+        public int myValue = 0;       
+        // objects   
+
+    // functions   
+    public void showMessage(String[] someMessageArgsArray)
+    {
+        System.out.println(" " + someMessageArgsArray[0] + " " + someMessageArgsArray[1]);
+    }
+
+    public void showPresentation(String somePresentationArg)
+    {
+        System.out.println("\n\n=== WELCOME ===================================== WELCOME ===");
+        System.out.println("\t" + somePresentationArg);
+        System.out.println("=== WELCOME ===================================== WELCOME ===\n\n");
+    }
+
+
+    public void simpleMenu(String[] someMenuOptionsArgsArray)
+    {
+        System.out.println("Menu Options:");
+        System.out.println("1. Some menu option");
+        System.out.println("2. Some menu option");
+        System.out.println("3. Some menu option");
+        System.out.println("4. Some menu option");
+        System.out.println("0. Exit the program");
+        System.out.println("");
+        System.out.print("Please select an option from 1-5\r\n");
+        
+        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        InputStreamReader myStreamReader = new InputStreamReader(System.in);
+        BufferedReader myBufferReader = new BufferedReader(myStreamReader);
+
+
+        String menuOption = "";        
+        try {
+            int input = Integer.parseInt(myBufferReader.readLine());
+            
+            if(input < 1 || input > 5) {
+                System.out.println("You have entered an invalid selection, please try again\r\n");
+            } else if(input == 0) {
+                System.out.println("You have quit the program\r\n");
+                System.exit(1);
+            } else {
+                switch(input) {
+                                case 1:
+                                    // code block
+                                    System.out.println("You chose option " + input);
+                                    System.out.println("I will run the program: " + menuOption);
+
+                                    // launch app 1
+
+                                    System.out.println("\n");
+                                    
+                                    break;
+                                case 2:
+                                    // code block
+                                    System.out.println("You chose option " + input);
+                                    System.out.println("I will run the program: " + menuOption);
+
+                                    // launch app 2
+
+                                    System.out.println("\n");
+
+                                    break;
+                                case 3:
+                                    // code block
+                                    System.out.println("You chose option " + input);
+                                    System.out.println("I will run the program: " + menuOption);
+
+                                    // launch app 3
+
+                                    System.out.println("\n");
+
+                                case 4:
+                                // code block
+                                System.out.println("You chose option " + input);
+                                System.out.println("I will run the program: " + menuOption);
+
+                                // launch app 4
+
+                                System.out.println("\n");
+                                
+                                break;
+                                case 0:
+                                    // code block  
+                                    System.out.println("You chose option " + menuOption);
+                                    System.out.println("I will Exit the application menu.");                                  
+                                    break;
+                                default:
+                                    System.out.println("<< ERROR >>  -- Please choose one of the menu options");                                  
+                                    System.out.println("\n");
+                            }
+            }
+        } catch (IOException inputOutputExecption) {
+            System.out.println("Specific IO Error Message");            
+        } catch (Exception genericExecption) {
+            System.out.println("Generic Error Message");            
+    }
+
+    public void otherSimpleMenu(String[] someMenuOptionsArgsArray)
+    {
+        //  variable
+                // primitives
+                    int optionKey=0;  
+
+                    String menuOption1 = someMenuOptionsArgsArray[0];               
+                    String menuOption2 = someMenuOptionsArgsArray[1];               
+                    String menuOption3 = someMenuOptionsArgsArray[2];               
+                    String menuOption4 = someMenuOptionsArgsArray[3];               
+                // objects
+                    Scanner myScanner = new Scanner(System.in);
+
+                // logic
+                    // presentation
+                    System.out.println("\nApplication Menu\n");                    
+                    do {
+                            System.out.println(" Choose a program to run");
+                            System.out.println("1 - " + menuOption1);
+                            System.out.println("2 - " + menuOption2);
+                            System.out.println("3 - " + menuOption3);
+                            System.out.println("4 - " + menuOption4);
+                            System.out.println("------------------------");
+                            System.out.println("0 - Exit");
+                            
+                            optionKey = Integer.parseInt(myScanner.next());                            
+
+                            switch(optionKey) {
+                                case 1:
+                                    // code block
+                                    System.out.println("You chose option " + optionKey);
+                                    System.out.println("I will run the program: " + menuOption1);
+
+                                    // launch app 1
+
+                                    System.out.println("\n");
+                                    
+                                    break;
+                                case 2:
+                                    // code block
+                                    System.out.println("You chose option " + optionKey);
+                                    System.out.println("I will run the program: " + menuOption2);
+
+                                    // launch app 2
+
+                                    System.out.println("\n");
+
+                                    break;
+                                case 3:
+                                    // code block
+                                    System.out.println("You chose option " + optionKey);
+                                    System.out.println("I will run the program: " + menuOption4);
+
+                                    // launch app 3
+
+                                    System.out.println("\n");
+
+                                case 4:
+                                // code block
+                                System.out.println("You chose option " + optionKey);
+                                System.out.println("I will run the program: " + menuOption4);
+
+                                // launch app 4
+
+                                System.out.println("\n");
+                                
+                                break;
+                                case 0:
+                                    // code block  
+                                    System.out.println("You chose option " + optionKey);
+                                    System.out.println("I will Exit the application menu.");                                  
+                                    break;
+                                default:
+                                    System.out.println("<< ERROR >>  -- Please choose one of the menu options");                                  
+                                    System.out.println("\n");
+                            }
+                    }
+                    while (optionKey != 0);
+                    System.out.println("\nGood Bye !!");          
+    }
+
+    public void showMenu(String[] someMenuOptionsArgsArray)
+    {        
+        simpleMenu(someMenuOptionsArgsArray);
+        //otherSimpleMenu(someMnuOptionsArgsArray);
+    }
+
+    public void showFarewell(String someFarewellArg)
+    {
+        System.out.println("\n\n=== GOODBYE ===================================== GOODBYE ===");
+        System.out.println("\t\t" + someFarewellArg);
+        System.out.println("=== GOODBYE ===================================== GOODBYE ===\n\n");
+    }
+    */
