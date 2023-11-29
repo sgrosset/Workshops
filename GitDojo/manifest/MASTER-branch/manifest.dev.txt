@@ -1,0 +1,7 @@
+# MANIFEST FILE
+
+# PROJECT: Talend
+# DOMAIN (Branch): MASTER-Branch
+# AUTHOR: Sosthene Grosset-Janin
+# TIMEFRAME: Nov/Dec 2023
+# CONTEXT: Outline the historical content of the current branch
