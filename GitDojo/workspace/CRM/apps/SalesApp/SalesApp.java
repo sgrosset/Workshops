@@ -146,6 +146,7 @@ public class SalesApp extends SalesAppLibrary
         int myCharVar1 = 's';
         int myBoolVar1 = true;
         // Objects
+        String myStringVar = '2';
       // Logic
       System.out.println("I am inside the logic: [MyNewMethod]");
     }
