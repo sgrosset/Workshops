@@ -1,0 +1,21 @@
+# Compiled class file
+*.class
+# Log file
+*.log
+# BlueJ files
+*.ctxt
+# Module Tools for Java (J2ME)
+.mtj.tmp/
+# Package File 
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+# virtual machine crash logs
+hs_err_pid*
+# Talend Specific files
+*.screenshot
+/temp
+code/routines/system
