@@ -9,9 +9,9 @@ import apps.salesApp.Opportunities.Opportunities;
 import apps.salesApp.Products.Products;
 import apps.salesApp.Users.Users;
 
-public class salesApp extends salesAppLibrary
+public class SalesApp extends salesAppLibrary
 {    
-    public salesApp()
+    public SalesApp()
     {                                        
         /* 
         boolean isAppOpen = true;       // Boolean flag variable to check that the application remains open
@@ -231,7 +231,7 @@ public class salesApp extends salesAppLibrary
     }   
 
 
-    public void MyNewMethod()
+    public void myNewMethod()
     {
       // Variables
         // Primitives
