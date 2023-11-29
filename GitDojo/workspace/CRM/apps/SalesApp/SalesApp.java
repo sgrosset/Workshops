@@ -5,10 +5,6 @@ import apps.SalesApp.Accounts.AccountsLibrary;
 import apps.SalesApp.Users.UserCredentials;
 
 
-
-
-
-
 /**
  * Class Manifest:
  *      Global Variables:
@@ -140,7 +136,17 @@ public class SalesApp extends SalesAppLibrary
                         }
                     }                                                                                        
             }                
-    }         
+    } 
+    
+    public void myNewMethod()
+    {
+      // Variables
+        // Primitives
+        // Objects
+      // Logic
+      System.out.println("I am inside the logic: [MyNewMethod]");
+    }
+
 }
 
 
