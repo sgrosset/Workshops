@@ -237,7 +237,11 @@ public class salesApp extends salesAppLibrary
         // Primitives
         // Objects
       // Logic
+<<<<<<< HEAD
       System.out.println("I am inside the logic: [MyNewMethods]");
+=======
+      System.out.println("I am inside the logic: [MyNewMethod]");
+>>>>>>> b815fae (Ref [004] Dom: FIX-branch US: fix-0001 job: correct the myNewMethod() name and SalesApp.java class name)
     }
 
 }
